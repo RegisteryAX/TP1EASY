@@ -1,8 +1,9 @@
 #include "Livre.h"
 #include "Date.h"
+#include "Auteur.h"
 #include <string>
 
-Livre::Livre(std::string titre, std::string auteur, std::string langue, std::string genre, const Date& date, long int ISBN)
+Livre::Livre(std::string titre, Auteur auteur, std::string langue, std::string genre, const Date& date, long int ISBN)
 	: datePublication_(date),titre_(titre),auteur_(auteur),langue_(langue),genre_(genre), ISBN_(ISBN)
 {
 }
@@ -12,7 +13,7 @@ void Livre::setTitre(const std::string& titre)
 	titre_ = titre;
 }
 
-void Livre::setAuteur(const std::string& auteur)
+void Livre::setAuteur(const Auteur& auteur)
 {
 	auteur_ = auteur;
 }
@@ -43,7 +44,7 @@ const std::string& Livre::titre() const
 	return titre_;
 }
 
-const std::string& Livre::auteur() const
+const Auteur& Livre::auteur() const
 {
 	return auteur_;
 }

@@ -24,6 +24,12 @@
     <ClInclude Include="Auteur.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Lecteur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Emprunt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Date.cpp">
@@ -36,6 +42,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Auteur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lecteur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Emprunt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
