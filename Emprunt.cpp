@@ -2,9 +2,9 @@
 #include "Date.h"
 #include <string>
 #include <vector>
-Emprunt::Emprunt(const Date& dateEmprunt, int ISBN, int ID) : dateEmprunt_(dateEmprunt),ISBN_(ISBN),ID_(ID) {}
+Emprunt::Emprunt(const Date& dateEmprunt, long int ISBN, int ID) : dateEmprunt_(dateEmprunt),ISBN_(ISBN),ID_(ID) {}
 
-void Emprunt::setISBN(const int& ISBN) {
+void Emprunt::setISBN(const long int& ISBN) {
 	ISBN_ = ISBN; 
 };
 
